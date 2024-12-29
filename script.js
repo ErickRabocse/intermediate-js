@@ -1,4 +1,5 @@
-//-----------------> STRINGS <-----------------
+//-----------------> STRINGS <--------------------------
+const text = 'Hello there!  '
 //length: returns the # of characters
 console.log(text.length)
 //includes(): returns true or false
@@ -17,3 +18,9 @@ console.log(text.substring(6))
 const result = text.toUpperCase().trim().substring(1)
 console.log(result)
 //-----------------> NUMBERS <-----------------
+const total = 1543.897
+//toFixed() -- 0 -> rounds number with no decimals
+console.log(total.toFixed())
+//toFixed() --2 -> rounds number with 2 decimals
+console.log(total.toFixed(2))
+//-----------------> BOOLEANS <-----------------
