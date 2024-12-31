@@ -24,3 +24,9 @@ console.log(total.toFixed())
 //toFixed() --2 -> rounds number with 2 decimals
 console.log(total.toFixed(2))
 //-----------------> BOOLEANS <-----------------
+const love = 'I love NY'
+if (!love.includes('NY')) {
+  console.log('NY rocks')
+} else {
+  console.log('NY is not for me')
+}
