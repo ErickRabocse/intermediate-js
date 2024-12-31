@@ -30,3 +30,14 @@ if (!love.includes('NY')) {
 } else {
   console.log('NY is not for me')
 }
+//dealing with a server
+const response = {
+  statusCode: 100,
+  ok: false,
+  data: [1, 2, 3],
+  error: 'Deal with error',
+}
+const ok = response.data
+if (ok) {
+  console.log(response.data)
+}
