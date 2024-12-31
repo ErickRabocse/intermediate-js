@@ -40,3 +40,4 @@ const response = {
 if (!response.ok) {
   console.log(response.error)
 }
+//-----------------> BOOLEANS video 17<-----------------
