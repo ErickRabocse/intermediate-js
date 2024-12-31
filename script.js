@@ -35,9 +35,8 @@ const response = {
   statusCode: 100,
   ok: false,
   data: [1, 2, 3],
-  error: 'Deal with error',
+  error: 'Deal with error now',
 }
-const ok = response.data
-if (ok) {
-  console.log(response.data)
+if (!response.ok) {
+  console.log(response.error)
 }
