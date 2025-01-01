@@ -57,4 +57,29 @@ const pets = [
 ]
 console.log(pets[2].name)
 console.log(pets[1])
-//-----------------> OBJECTS video 18 <-----------------
+//-----------------> OBJECTS <-----------------
+//Objects in objects
+const user = {
+  name: 'Luigui',
+  age: 22,
+  address: {
+    street: 'Smith St',
+    city: 'USA',
+  },
+  hobbies: ['singing', 'hockey'],
+}
+console.log(user.address.street)
+// Property name can be the same as the property value
+// const username = input.value
+// const password = input.value
+// const newUser = {
+//   username: username,
+//   password: password,
+// }
+// Passing object as argument to function
+const logUser = (person) => {
+  console.log(`${person.name} likes:`)
+  console.log(person.hobbies.forEach((h) => console.log(h)))
+}
+logUser(user)
+//-----------------> INCREMENT++ & DECREMENT-- video 19 <-----------------
