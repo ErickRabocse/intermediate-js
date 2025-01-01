@@ -82,4 +82,35 @@ const logUser = (person) => {
   console.log(person.hobbies.forEach((h) => console.log(h)))
 }
 logUser(user)
-//-----------------> INCREMENT++ & DECREMENT-- video 19 <-----------------
+//-----------------> INCREMENT++ & DECREMENT-- <-----------------
+let numero = 100 //important to use let instead of const
+numero++ // It's the same as: numero = numero + 1
+console.log(numero)
+numero--
+console.log(numero)
+//-----------------> CONSOLE <-----------------
+console.log(typeof 6)
+// When working directly in the console it returns undefined after the result if it's not a fn that returns stg.
+//-----------------> FUNCTIONS <-----------------
+// Calling a fn inside another fn
+// Creating fn that do a specific task which may be used in multiple scenarios is a good example of REFACTORING TO DRY (DON'T REPEAT YOURSELF)
+const message = () => {
+  console.log('Operation done!')
+}
+const addNums = (a, b) => {
+  console.log(a + b)
+  message()
+  return //early return / stops function execution
+  console.log('Do one more')
+}
+addNums(2, 2)
+// common structure to stop the fn when needed.
+const checkCapacity = (n) => {
+  if (n > 100) {
+    console.log('No more space')
+    return
+  }
+  console.log('Welcome')
+}
+checkCapacity(101)
+//-----------------> HOISTING <-----------------
