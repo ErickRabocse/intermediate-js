@@ -40,4 +40,21 @@ const response = {
 if (!response.ok) {
   console.log(response.error)
 }
-//-----------------> BOOLEANS video 17<-----------------
+//-----------------> ARRAYS <-----------------
+const numbers = [1, 44, 25, 62]
+console.log(numbers.length)
+numbers.push(10) //push() method
+console.log(`This is the new array ${numbers}`)
+console.log(numbers.includes(1)) //includes() method
+console.log(numbers[1] * 2) //accessing an element by its index
+numbers.forEach((num, i) => console.log(num * 2, [i])) //looping with foreach
+const multiplyByTen = (num) => console.log(num * 10)
+numbers.forEach(multiplyByTen) //prev. declare a fn to then pass as arg to forEach
+const pets = [
+  { name: 'Kuma', age: 11 },
+  { name: 'Hana', age: 8 },
+  { name: 'Guri', age: 8 },
+]
+console.log(pets[2].name)
+console.log(pets[1])
+//-----------------> OBJECTS video 18 <-----------------
