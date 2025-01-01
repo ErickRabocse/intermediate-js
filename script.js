@@ -114,3 +114,16 @@ const checkCapacity = (n) => {
 }
 checkCapacity(101)
 //-----------------> HOISTING <-----------------
+// With old var = variables and "traditional" fn can be called before they are declared if the declaration is somewhere in the code.
+//-----------------> TIMERS <-----------------
+// setTimeOut has two parameters: the 1st is the fn & the 2nd separated by a comma specifies when shall the fn run.
+setTimeout(() => {
+  let n = 1
+  console.log('Hi!', n++)
+}, 2000)
+// setInterval(() => {
+//   //setInterval call the fn every so often
+//   console.log('Hola')
+//   console.log('Adios')
+// }, 2000)
+//-----------------> LOOPS: for & forEach <-----------------
