@@ -127,3 +127,29 @@ setTimeout(() => {
 //   console.log('Adios')
 // }, 2000)
 //-----------------> LOOPS: for & forEach <-----------------
+// You can only use forEach on an array.
+const ages = [35, 34, 10, 7]
+ages.forEach((n) => {
+  console.log(n * 2)
+})
+// for "loops" have 3 parts: starting poing, finish line & increment rate.
+for (let i = 0; i <= 10; i++) {
+  console.log(i)
+}
+//-----------------> Fetch API <-----------------
+// In the inspect tools: Network --> Fetch --> file-fetched --> Response
+// After fetching the data "consume the promise" with .then()
+fetch('https://jsonplaceholder.typicode.com/todos')
+  .then((res) => {
+    if (!res.ok) {
+      //When the status code is not ok
+      console.log('Problem!')
+    }
+    return res.json() //converts json into JS (parses JSON) - takes time
+  })
+  .then((data) => {
+    console.log(data)
+    console.log(data[0].title)
+  }) //make sure you include an action in case of errors
+  .catch((error) => console.log(`This is the error: ${error}`))
+//-----------------> Fetch API EXAMPLE <-----------------
